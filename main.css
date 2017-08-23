@@ -1,0 +1,230 @@
+/*global*/
+body {
+    margin: 0;
+    height: 100%;
+}
+
+/*header*/
+#header {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-image: url("http://i.imgur.com/BZDMe7t.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /*transition: all 0.2s ease-out 0.1s*/
+}
+
+#title {
+    /*Move border over to titleinfo*/
+    transform: translate(330px, -95px);
+    font-family: Tahoma;
+    font-size: 50px;
+}
+
+#titleBorder {
+    transform: translate(260px, -15px);
+    border: 1px solid;
+    border-width: 6px;
+    height: 80px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-out 0s;
+}
+
+#titleLastName {
+    font-weight: bold;
+}
+
+#titleInfo {
+    /*Make it opacity of 0 then 1 when it hovers over it and transition it*/
+    transform: translate(-100%, 0px);
+    font-family: Tahoma;
+    font-size: 20px;
+    opacity: 0;
+    transition: all 0.3s ease-out 0s;
+
+}
+
+/*#titleInfo:hover{*/
+/*transform: translate(-205px, 45px);*/
+/*opacity: 1;*/
+/*}*/
+
+/*Space between icon and resume*/
+span + i {
+    margin-left: 20px;
+}
+
+.icon {
+    margin-top: 6px;
+}
+
+#otherIcon {
+    margin-top: 18px;
+}
+
+#resumeTab {
+    font-size: 50px;
+    z-index: 10;
+    color: white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*transition: all 0.2s ease-out 0s;*/
+
+}
+
+#resumeTab:hover {
+    color: #ffffcc;
+    opacity: 0.9;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #ffffcc;
+}
+
+#alignResumeTab {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.border {
+    border: 1px solid white;
+    border-radius: 10px;
+    border-width: 3px;
+    width: 270px;
+    height: 75px;
+    margin-left: 20px;
+    text-align: center;
+    /*transition: all 0.1s ease;*/
+}
+
+.border:hover {
+    /*color: #ffffcc;*/
+    border-color: #ffffcc;
+    border-width: 4.5px;
+}
+
+#resumeContainer {
+    display: flex;
+    width: 27%;
+    justify-content: center;
+    padding-right: 10px;
+
+}
+
+/*section*/
+.section {
+    display: flex;
+    align-items: center;
+    height: 160px;
+}
+
+#redSection {
+    display: flex;
+    align-items: center;
+    height: 600px;
+}
+
+#projectsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.red {
+    background-color: rgba(139, 0, 0, 0.8);
+}
+/*This is all labels besides the resume one*/
+.label {
+    color: white;
+    font-size: 55px;
+    z-index: 20;
+}
+
+.underLine {
+    text-decoration: none;
+    position: relative;
+    color: white;
+}
+
+.underLine:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+/*.underLine:hover:before {*/
+/*visibility: visible;*/
+/*-webkit-transform: scaleX(1);*/
+/*transform: scaleX(1);*/
+/*}*/
+
+#navBar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(139, 0, 0, 0.4);
+    opacity: .99;
+    z-index: 10;
+    width: 27%;
+    height: 140%;
+}
+.labelContainer {
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    padding: 10px;
+}
+#aboutText {
+    width: 73%;
+    text-align: center;
+    color: saddlebrown;
+}
+
+.projectsText {
+    width: 73%;
+    text-align: left;
+    color: black;
+}
+
+#projectsTab {
+    margin-left: 95%;
+}
+
+.projectsTitle {
+    color: #ffdd99;
+}
+
+#projectsText:hover {
+
+}
+
+#otherText {
+    width: 73%;
+    text-align: center;
+    color: saddlebrown;
+}
