@@ -4,7 +4,7 @@ body {
     height: 100%;
 }
 
-/*header*/
+/*header/////////////////////////////////////////////////////////////////////////////////////////////////*/
 #header {
     width: 100%;
     height: 200px;
@@ -53,11 +53,6 @@ body {
 
 }
 
-/*#titleInfo:hover{*/
-/*transform: translate(-205px, 45px);*/
-/*opacity: 1;*/
-/*}*/
-
 /*Space between icon and resume*/
 span + i {
     margin-left: 20px;
@@ -71,23 +66,6 @@ span + i {
     margin-top: 18px;
 }
 
-#resumeTab {
-    font-size: 50px;
-    z-index: 10;
-    color: white;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /*transition: all 0.2s ease-out 0s;*/
-
-}
-
-#resumeTab:hover {
-    color: #ffffcc;
-    opacity: 0.9;
-}
-
 a {
     text-decoration: none;
     color: white;
@@ -95,29 +73,6 @@ a {
 
 a:hover {
     color: #ffffcc;
-}
-
-#alignResumeTab {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.border {
-    border: 1px solid white;
-    border-radius: 10px;
-    border-width: 3px;
-    width: 270px;
-    height: 75px;
-    margin-left: 20px;
-    text-align: center;
-    /*transition: all 0.1s ease;*/
-}
-
-.border:hover {
-    /*color: #ffffcc;*/
-    border-color: #ffffcc;
-    border-width: 4.5px;
 }
 
 #resumeContainer {
@@ -128,7 +83,51 @@ a:hover {
 
 }
 
-/*section*/
+#resumeTab {
+    font-size: 50px;
+    z-index: 10;
+    color: white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*transition: all 0.2s ease-out 0s;*/
+}
+
+#resumeTab:hover {
+    color: #ffffcc;
+    opacity: 0.9;
+}
+
+#alignResumeTab {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.resumeBorder {
+    border: 1px solid white;
+    border-radius: 10px;
+    border-width: 3px;
+    width: 270px;
+    height: 75px;
+    margin-left: 20px;
+    text-align: center;
+    /*transition: all 0.1s ease;*/
+}
+
+.resumeBorder:hover {
+    /*color: #ffffcc;*/
+    border-color: #ffffcc;
+    border-width: 4.5px;
+}
+
+/*section/////////////////////////////////////////////////////////////////////////////////////////////*/
+#projectsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
 .section {
     display: flex;
     align-items: center;
@@ -141,48 +140,25 @@ a:hover {
     height: 600px;
 }
 
-#projectsContainer {
-    display: flex;
-    flex-direction: column;
-}
-
 .red {
     background-color: rgba(139, 0, 0, 0.8);
 }
+
 /*This is all labels besides the resume one*/
+.labelContainer {
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    padding: 10px;
+}
+
 .label {
     color: white;
     font-size: 55px;
     z-index: 20;
 }
 
-.underLine {
-    text-decoration: none;
-    position: relative;
-    color: white;
-}
-
-.underLine:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #000;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-}
-
-/*.underLine:hover:before {*/
-/*visibility: visible;*/
-/*-webkit-transform: scaleX(1);*/
-/*transform: scaleX(1);*/
-/*}*/
-
+/*Navigation bar///////////////////////////////////////////////////////////////////////////////////*/
 #navBar {
     position: absolute;
     top: 0;
@@ -193,34 +169,25 @@ a:hover {
     width: 27%;
     height: 140%;
 }
-.labelContainer {
-    display: flex;
-    width: 25%;
-    justify-content: center;
-    padding: 10px;
-}
+
 #aboutText {
     width: 73%;
     text-align: center;
     color: saddlebrown;
 }
 
-.projectsText {
-    width: 73%;
-    text-align: left;
-    color: black;
+.projectsTitle {
+    color: #ffdd99;
 }
 
 #projectsTab {
     margin-left: 95%;
 }
 
-.projectsTitle {
-    color: #ffdd99;
-}
-
-#projectsText:hover {
-
+.projectsText {
+    width: 73%;
+    text-align: left;
+    color: black;
 }
 
 #otherText {
