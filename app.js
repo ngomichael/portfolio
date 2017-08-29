@@ -8,15 +8,27 @@ $(document).ready(function() {
     })
 
     $('#title').mouseenter(function() {
-        titleInfo.style.transform = 'translate(-100%, 42px)';
+        titleInfo.style.transform = 'translate(-110%, 42px)';
         // console.log($('#titleInfo'));
         $('#titleInfo').fadeTo('fast', '1');
     })
 
     $('#title').mouseleave(function() {
         $('#titleInfo').fadeTo('fast', '0')
-        titleInfo.style.transform = 'translate(-100%, 0px)';
+        titleInfo.style.transform = 'translate(-110%, 0px)';
     })
+
+    // $('#resumeTab').mouseenter(function() {
+    //     titleInfo.style.transform = 'translate(-110%, 42px)';
+    //     // console.log($('#titleInfo'));
+    //     $('#titleInfo').fadeTo('fast', '1');
+    // })
+    //
+    // $('#resumeTab').mouseleave(function() {
+    //     $('#titleInfo').fadeTo('fast', '0')
+    //     titleInfo.style.transform = 'translate(-110%, 0px)';
+    // })
+
 
     // $(".underLine").mouseenter(function() {
     //     $(this).animate({

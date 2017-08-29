@@ -2,6 +2,7 @@
 body {
     margin: 0;
     height: 100%;
+    width: 100%;
 }
 
 /*header/////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -45,7 +46,7 @@ body {
 
 #titleInfo {
     /*Make it opacity of 0 then 1 when it hovers over it and transition it*/
-    transform: translate(-100%, 0px);
+    transform: translate(-110%, 0px);
     font-family: Tahoma;
     font-size: 20px;
     opacity: 0;
@@ -144,18 +145,28 @@ a:hover {
     background-color: rgba(139, 0, 0, 0.8);
 }
 
-/*This is all labels besides the resume one*/
-.labelContainer {
-    display: flex;
-    width: 25%;
-    justify-content: center;
-    padding: 10px;
+#aboutText {
+    width: 73%;
+    text-align: center;
+    color: saddlebrown;
 }
 
-.label {
-    color: white;
-    font-size: 55px;
-    z-index: 20;
+.projectsTitle {
+    color: #ffdd99;
+}
+
+
+
+.projectsText {
+    width: 73%;
+    text-align: left;
+    color: black;
+}
+
+#otherText {
+    width: 73%;
+    text-align: center;
+    color: saddlebrown;
 }
 
 /*Navigation bar///////////////////////////////////////////////////////////////////////////////////*/
@@ -170,28 +181,13 @@ a:hover {
     height: 140%;
 }
 
-#aboutText {
-    width: 73%;
-    text-align: center;
-    color: saddlebrown;
-}
-
-.projectsTitle {
-    color: #ffdd99;
-}
-
-#projectsTab {
-    margin-left: 95%;
-}
-
-.projectsText {
-    width: 73%;
-    text-align: left;
-    color: black;
-}
-
-#otherText {
-    width: 73%;
-    text-align: center;
-    color: saddlebrown;
+/*This is all labels besides the resume one*/
+.label {
+    display: flex;
+    width: 25%;
+    padding: 10px;
+    color: white;
+    font-size: 55px;
+    z-index: 20;
+    margin-left: 20%;
 }
