@@ -17,11 +17,10 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /*transition: all 0.2s ease-out 0.1s*/
 }
 
 #title {
-    /*Move border over to titleinfo*/
+    /*Moves border over to #titleInfo*/
     transform: translate(330px, -95px);
     font-family: Tahoma;
     font-size: 50px;
@@ -45,13 +44,12 @@ body {
 }
 
 #titleInfo {
-    /*Make it opacity of 0 then 1 when it hovers over it and transition it*/
+    /*Make titleInfo opacity of 0 then 1 when it gets hovered over and translates it*/
     transform: translate(-110%, 0px);
     font-family: Tahoma;
     font-size: 20px;
     opacity: 0;
     transition: all 0.3s ease-out 0s;
-
 }
 
 /*Space between icon and resume*/
@@ -81,7 +79,6 @@ a:hover {
     width: 27%;
     justify-content: center;
     padding-right: 10px;
-
 }
 
 #resumeTab {
@@ -92,7 +89,6 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    /*transition: all 0.2s ease-out 0s;*/
 }
 
 #resumeTab:hover {
@@ -114,11 +110,9 @@ a:hover {
     height: 75px;
     margin-left: 20px;
     text-align: center;
-    /*transition: all 0.1s ease;*/
 }
 
 .resumeBorder:hover {
-    /*color: #ffffcc;*/
     border-color: #ffffcc;
     border-width: 4.5px;
 }
@@ -154,8 +148,6 @@ a:hover {
 .projectsTitle {
     color: #ffdd99;
 }
-
-
 
 .projectsText {
     width: 73%;
